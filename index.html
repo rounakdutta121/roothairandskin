@@ -1067,24 +1067,22 @@
       border: 1px solid rgba(255, 255, 255, 0.18);
       transition: background .2s, color .2s, transform .2s;
     }
-    .island-side.island-imessage {
-      background: #0A84FF;
-      border-color: #0076ef;
-    }
     .island-side.island-call {
+      width: auto;
+      min-width: 72px;
+      padding: 0 16px;
+      border-radius: 999px;
       background: #FF3B30;
       border-color: #e6352b;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
     }
     .island-side:hover,
     .island-side:active {
       color: #fff;
       transform: scale(1.04);
       filter: brightness(1.08);
-    }
-    .island-side svg {
-      width: 20px;
-      height: 20px;
-      fill: currentColor;
     }
     .island-consult {
       flex: 1;
@@ -1097,9 +1095,10 @@
       gap: 8px;
       background: var(--orange);
       color: #fff;
-      font-size: 0.82rem;
+      font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.02em;
+      letter-spacing: 0.01em;
+      padding: 0 14px;
       box-shadow: 0 8px 20px rgba(196, 120, 58, 0.35);
       transition: background .2s, transform .2s;
     }
@@ -1109,6 +1108,7 @@
       transform: translateY(-1px);
     }
     .island-consult svg {
+      display: none;
       width: 16px;
       height: 16px;
       fill: currentColor;
@@ -1977,16 +1977,8 @@ Bellevue, WA 98004</p>
 
   <div class="mobile-island-dock" id="mobileIslandDock">
     <nav class="mobile-island" aria-label="Quick actions">
-      <a class="island-side island-imessage" href="sms:+14255521339" aria-label="Message us on iMessage">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 5.9 2 10.7c0 2.8 1.5 5.3 3.9 6.9-.1.9-.6 2.5-2.1 3.6 2.3-.1 4.1-1.1 5.2-1.9.9.2 1.9.3 2.9.3 5.5 0 10-3.9 10-8.9S17.5 2 12 2z"/></svg>
-      </a>
-      <a class="island-consult" href="#contact">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 4-6 4.5L6 8V6l6 4.5L18 6v2z"/></svg>
-        Consult Now
-      </a>
-      <a class="island-side island-call" href="tel:+14255521339" aria-label="Call (425) 552-1339">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.9z"/></svg>
-      </a>
+      <a class="island-consult" href="#contact">Book a consultation</a>
+      <a class="island-side island-call" href="tel:+14255521339" aria-label="Call (425) 552-1339">Call</a>
     </nav>
   </div>
 
