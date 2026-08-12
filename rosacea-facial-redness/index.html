@@ -971,6 +971,18 @@
       .nav-toggle { display: grid; place-items: center; }
       .mobile-island { display: flex; }
       body { padding-bottom: calc(90px + env(safe-area-inset-bottom, 0px)); }
+      .trust-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 16px;
+        text-align: left;
+        font-size: 0.78rem;
+        padding: 18px 0;
+      }
+      .trust-inner span {
+        align-items: flex-start;
+        line-height: 1.35;
+      }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr; }
       .why-item:nth-child(5) { grid-column: auto; }
