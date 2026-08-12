@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Pigmentation &amp; Sun Damage Treatment Bellevue | Stellar M22 XPL</title>
+  <meta name="description" content="Explore personalized Stellar M22 XPL treatment for suitable pigmentation, sun spots, and uneven tone at Root Hair &amp; Skin in Bellevue. Request a consultation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --plum: #4A1838;
+      --plum-deep: #2F0F24;
+      --plum-mid: #6B2A52;
+      --orange: #C4783A;
+      --orange-hot: #D4894A;
+      --orange-soft: #F8EFE4;
+      --accent-glow: #E8C49A;
+      --lavender: #F7F1F5;
+      --mist: #FBF8FA;
+      --white: #FFFFFF;
+      --ink: #121212;
+      --muted: #6B6570;
+      --line: rgba(74, 24, 56, 0.12);
+      --shadow: 0 20px 60px rgba(47, 15, 36, 0.14);
+      --shadow-soft: 0 10px 30px rgba(47, 15, 36, 0.08);
+      --radius: 20px;
+      --max: 1200px;
+      --font: "Plus Jakarta Sans", system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    body {
+      font-family: var(--font);
+      background: var(--mist);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 16.5px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
+    main {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    section {
+      max-width: 100%;
+      overflow-x: clip;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font-family: inherit; }
+    .wrap { width: min(100% - 40px, var(--max)); margin-inline: auto; }
+
+    /* Header */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.9);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+      animation: fadeRise 0.6s ease both;
+    }
+    .header-inner {
+      width: min(100% - 40px, 1280px);
+      margin-inline: auto;
+      min-height: 78px;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      min-width: 0;
+    }
+    .brand img { height: 44px; width: auto; max-width: min(260px, 50vw); object-fit: contain; }
+    .brand-tagline {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: #8A8490;
+      line-height: 1.25;
+      white-space: nowrap;
+      max-width: 100%;
+    }
+    .nav { display: flex; gap: 28px; margin-left: auto; margin-right: 16px; }
+    .nav a { font-size: 0.92rem; font-weight: 600; color: var(--ink); opacity: 0.8; }
+    .nav a:hover { color: var(--orange); opacity: 1; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      border: none; cursor: pointer; border-radius: 999px;
+      font-weight: 800; transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-orange {
+      background: var(--orange);
+      color: #fff;
+      padding: 13px 22px;
+      font-size: 0.84rem;
+      box-shadow: 0 10px 28px rgba(196, 120, 58, 0.35);
+    }
+    .btn-orange:hover { background: var(--orange-hot); }
+    .btn-plum {
+      background: var(--plum);
+      color: #fff;
+      padding: 16px 28px;
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+    }
+    .header-ctas { display: flex; align-items: center; gap: 10px; }
+    .social-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .social-links a {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: var(--plum);
+      background: var(--lavender);
+      border: 1px solid var(--line);
+      transition: background .2s, color .2s, transform .2s, border-color .2s;
+    }
+    .social-links a:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .social-links a svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
+    }
+    .header-social {
+      margin-right: 4px;
+    }
+    .site-footer .social-links a {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.14);
+      color: #fff;
+    }
+    .site-footer .social-links a:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+      color: #fff;
+    }
+    .footer-brand-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .footer-brand-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .cert-seal {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .cert-seal img {
+      width: auto;
+      height: 72px;
+      display: block;
+    }
+    .cert-seal-inline {
+      background: #fff;
+      border-radius: 12px;
+      padding: 8px 10px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--line);
+    }
+    .cert-seal-inline img { height: 64px; }
+    .cert-strip {
+      background: var(--mist);
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .cert-strip-inner {
+      width: min(100% - 40px, var(--max));
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+    .cert-strip-copy strong {
+      display: block;
+      color: var(--plum);
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .cert-strip-copy p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 500;
+      max-width: 42ch;
+      margin: 0;
+    }
+    .footer-brand-wrap .cert-seal img { height: 52px; }
+    .mobile-social {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 0 4px;
+      border-top: 1px solid var(--line);
+      margin-top: 8px;
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--plum);
+      border: 1.5px solid var(--line);
+      padding: 12px 16px;
+      font-size: 0.82rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .btn-ghost:hover { border-color: var(--orange); color: var(--orange); }
+    .hero-bullets {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 16px;
+      margin: 22px 0 0;
+      width: 100%;
+      max-width: 520px;
+    }
+    .hero-bullets li {
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.92);
+      line-height: 1.35;
+      text-align: left;
+    }
+    .hero-bullets li::before {
+      content: "✓";
+      color: var(--orange);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .clinical-note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    .clinical-note strong { color: var(--plum); }
+    .final-ctas { display: flex; flex-wrap: wrap; gap: 12px; position: relative; z-index: 1; }
+    .final-ctas .btn-ghost {
+      color: #fff;
+      border-color: rgba(255,255,255,0.35);
+    }
+    .final-ctas .btn-ghost:hover {
+      border-color: #fff;
+      color: #fff;
+      background: rgba(255,255,255,0.08);
+    }
+    .serving-note {
+      margin-top: 0;
+      text-align: left;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.78);
+      font-weight: 500;
+      max-width: none;
+      margin-inline: 0;
+    }
+    .edu-disclaimer {
+      margin-top: 8px;
+      text-align: left;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      font-style: italic;
+    }
+    .menu-toggle {
+      display: none; width: 42px; height: 42px; border-radius: 12px;
+      border: 1px solid var(--line); background: #fff;
+      flex-direction: column; align-items: center; justify-content: center; gap: 5px;
+    }
+    .menu-toggle span { width: 18px; height: 2px; background: var(--plum); border-radius: 2px; }
+    .mobile-nav {
+      display: none; flex-direction: column; gap: 2px;
+      padding: 8px 20px 18px; background: #fff; border-bottom: 1px solid var(--line);
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); font-weight: 600; }
+    .mobile-nav .btn-orange { width: 100%; margin-top: 10px; border-radius: 14px; }
+
+    /* HERO — full-bleed background */
+    .hero {
+      position: relative;
+      min-height: clamp(640px, 88vh, 780px);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      clip-path: inset(0);
+      padding: 48px 0 56px;
+      max-width: 100%;
+    }
+    .hero-bg img,
+    .hero-bg picture {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .hero-bg picture { position: absolute; inset: 0; }
+    .hero-bg img {
+      object-fit: cover;
+      object-position: center center;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: #4A1838;
+    }
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(74, 24, 56, 0.92) 0%, rgba(74, 24, 56, 0.55) 28%, rgba(74, 24, 56, 0.08) 48%, transparent 58%, rgba(74, 24, 56, 0.15) 100%),
+        linear-gradient(180deg, rgba(74, 24, 56, 0.2) 0%, transparent 35%, rgba(74, 24, 56, 0.35) 100%);
+    }
+    .hero-shell {
+      position: relative;
+      z-index: 1;
+      width: min(100% - 40px, 1280px);
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: stretch;
+    }
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #fff;
+      max-width: 640px;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      width: fit-content;
+      background: rgba(196, 120, 58, 0.22);
+      color: var(--accent-glow);
+      border: 1px solid rgba(196, 120, 58, 0.4);
+      font-size: 0.72rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 8px 14px; border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .eyebrow i {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--orange);
+      display: block;
+    }
+    .hero-copy h1 {
+      font-size: clamp(2.6rem, 4.6vw, 3.9rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 16px;
+      max-width: 12ch;
+    }
+    .hero-copy h1 span { color: var(--orange-hot); }
+    .hero-copy .lead {
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+      max-width: 42ch;
+      margin-bottom: 24px;
+    }
+    .location {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 700; color: var(--accent-glow); font-size: 0.95rem;
+      margin: 0;
+    }
+    .hero-highlight {
+      display: flex;
+      flex-direction: column;
+      background: rgba(74, 24, 56, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+      max-width: 420px;
+      margin-left: auto;
+      width: 100%;
+      align-self: center;
+    }
+    .hero-highlight-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      flex: 0 0 auto;
+      background: var(--plum-deep);
+    }
+    .hero-highlight-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .hero-highlight-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 55%, rgba(74, 24, 56, 0.5) 100%);
+      pointer-events: none;
+    }
+    .hero-highlight-body {
+      padding: 18px 24px 22px;
+      flex-shrink: 0;
+    }
+    .stats-row {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .stat-chip {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      padding: 12px 14px;
+      min-width: 110px;
+    }
+    .stat-chip strong {
+      display: block; font-size: 1.15rem; font-weight: 800; color: #fff; line-height: 1.1;
+    }
+    .stat-chip span { font-size: 0.75rem; color: rgba(255,255,255,0.75); font-weight: 600; }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .hero-actions .btn-ghost {
+      color: #fff;
+      border-color: rgba(255,255,255,0.35);
+    }
+    .hero-actions .btn-ghost:hover {
+      border-color: #fff;
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
+
+    .lead-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border-radius: 24px;
+      padding: 28px 24px 24px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .lead-form h2 {
+      font-size: 1.35rem; font-weight: 800; color: var(--plum); margin-bottom: 4px;
+    }
+    .lead-form .sub {
+      font-size: 0.84rem; color: var(--muted); font-weight: 500; margin-bottom: 16px;
+    }
+    .form-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .field label {
+      display: block; font-size: 0.72rem; font-weight: 700; color: var(--plum);
+      margin-bottom: 4px;
+    }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      border: 1.5px solid var(--line);
+      background: var(--lavender);
+      border-radius: 12px;
+      padding: 0 12px;
+      font-size: 0.9rem; color: var(--ink);
+      outline: none; appearance: none;
+      transition: border-color .2s, box-shadow .2s;
+      font-family: inherit;
+    }
+    .field input, .field select { height: 44px; }
+    .field textarea {
+      min-height: 120px;
+      padding: 12px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+    .field-message { display: flex; flex-direction: column; }
+    .field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A1838' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 34px;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(196,120,58,0.18);
+      background: #fff;
+    }
+    .btn-submit {
+      width: 100%; margin-top: 4px;
+      background: var(--orange); color: #fff; border: none;
+      border-radius: 12px; padding: 14px;
+      font-size: 0.8rem; font-weight: 800;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      cursor: pointer; box-shadow: 0 10px 24px rgba(196,120,58,0.3);
+      transition: background .2s, transform .2s;
+    }
+    .btn-submit:hover { background: var(--orange-hot); transform: translateY(-1px); }
+    .form-note { margin-top: 10px; font-size: 0.72rem; color: var(--muted); text-align: center; }
+    .form-success {
+      display: none; text-align: center; padding: 18px 6px;
+      color: var(--plum); font-weight: 700;
+    }
+    .lead-form.submitted .form-grid,
+    .lead-form.submitted h2,
+    .lead-form.submitted .sub,
+    .lead-form.submitted .form-note { display: none; }
+    .lead-form.submitted .form-success { display: block; }
+
+    /* Contact section */
+    .contact {
+      background: #EFE6EC;
+      padding: 80px 0;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 36px;
+      align-items: start;
+    }
+    .contact-info h2 { margin-bottom: 12px; }
+    .contact-info > p {
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 24px;
+      max-width: 40ch;
+    }
+    .contact-details {
+      display: grid;
+      gap: 16px;
+    }
+    .contact-detail {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .contact-detail svg {
+      color: var(--orange);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-detail strong {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--plum);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .contact-detail p,
+    .contact-detail a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted);
+      white-space: pre-line;
+      line-height: 1.45;
+    }
+    .contact-detail a:hover { color: var(--orange); }
+
+    /* Marquee trust */
+    .trust {
+      background: var(--plum);
+      color: #fff;
+      padding: 18px 0;
+      overflow: hidden;
+    }
+    .trust-track {
+      display: flex; gap: 48px; width: max-content;
+      animation: marquee 28s linear infinite;
+      padding-left: 24px;
+    }
+    .trust-track span {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-weight: 700; font-size: 0.95rem; white-space: nowrap;
+    }
+    .trust-track span::before {
+      content: ""; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--orange); flex-shrink: 0;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* Sections common */
+    section { padding: 80px 0; }
+    .kicker {
+      display: inline-block;
+      color: var(--orange); font-size: 0.75rem; font-weight: 800;
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .title {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      font-weight: 800; letter-spacing: -0.03em;
+      color: var(--plum); line-height: 1.12; margin-bottom: 12px;
+    }
+    .subtitle {
+      color: var(--muted); font-weight: 500; max-width: 48ch; margin-bottom: 36px;
+    }
+    .center { text-align: center; }
+    .center .subtitle { margin-inline: auto; }
+
+    /* Concerns — bento */
+    .concerns { background: #fff; }
+    .concern-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 16px;
+    }
+    .concern-card {
+      position: relative; border-radius: 22px; overflow: hidden;
+      min-height: 220px; box-shadow: var(--shadow-soft);
+    }
+    .concern-card.featured { grid-row: span 2; min-height: 460px; }
+    .concern-card.concern-wide { grid-column: span 2; }
+    .concern-card img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; transition: transform .5s ease;
+    }
+    .concern-card:hover img { transform: scale(1.05); }
+    .concern-card .overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(47,15,36,0.85) 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 22px;
+      color: #fff;
+    }
+    .concern-card h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 4px; }
+    .concern-card p { font-size: 0.9rem; opacity: 0.9; font-weight: 500; }
+
+    /* Tech */
+    .technology {
+      background: #4A1838;
+      color: #fff;
+    }
+    .technology .title { color: #fff; }
+    .technology .subtitle { color: rgba(255, 255, 255, 0.8); }
+    .technology .kicker { color: var(--orange); }
+    .tech-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center;
+    }
+    .tech-media {
+      border-radius: 28px; overflow: hidden; aspect-ratio: 4/3;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
+    .tech-media img { width: 100%; height: 100%; object-fit: cover; }
+    .tech-media .tag {
+      position: absolute; top: 18px; left: 18px;
+      background: var(--orange); color: #fff;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 8px 12px; border-radius: 999px;
+    }
+    .check-list { list-style: none; display: grid; gap: 12px; margin-top: 8px; }
+    .check-list li {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: rgba(255, 255, 255, 0.96); border-radius: 14px; padding: 14px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2); font-weight: 600; color: var(--ink);
+    }
+    .check-list .tick {
+      width: 24px; height: 24px; border-radius: 50%; flex-shrink: 0;
+      background: var(--orange); color: #fff;
+      display: grid; place-items: center; font-size: 0.75rem; font-weight: 800;
+    }
+
+    /* Benefits */
+    .benefits { background: var(--mist); }
+    .benefit-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    }
+    .benefit {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px 22px;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .benefit:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: rgba(196,120,58,0.4);
+    }
+    .benefit-num {
+      font-size: 0.75rem; font-weight: 800; color: var(--orange);
+      letter-spacing: 0.08em; margin-bottom: 14px;
+    }
+    .benefit h3 {
+      font-size: 1.2rem; font-weight: 800; color: var(--plum);
+      line-height: 1.25; margin-bottom: 10px; white-space: pre-line;
+    }
+    .benefit p { font-size: 0.92rem; color: var(--muted); font-weight: 500; }
+
+    /* Before/After gallery — dark plum */
+    .results {
+      background: #4A1838;
+      color: #fff;
+      padding: 80px 0;
+    }
+    .results .kicker { color: var(--orange); }
+    .results .title { color: #fff; }
+    .results-intro {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .results-intro .title { margin-bottom: 8px; }
+    .results-intro p {
+      color: rgba(255, 255, 255, 0.78);
+      font-weight: 500;
+      max-width: 46ch;
+      margin-inline: auto;
+    }
+
+    .ba-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+    .ba-card {
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+      background: #f2f2f2;
+      aspect-ratio: 5 / 3;
+    }
+    .ba-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+    }
+    .disclaimer {
+      text-align: center;
+      margin: 0;
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.65);
+      font-style: italic;
+    }
+
+    /* Journey + candidacy */
+    .journey {
+      background: var(--lavender);
+      color: var(--ink);
+      padding: 80px 0;
+    }
+    .journey-block {
+      margin-bottom: 36px;
+    }
+    .journey-block > h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--plum);
+      text-align: center;
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
+    }
+    .journey-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      overflow: hidden;
+    }
+    .journey-step {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 16px;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-soft);
+    }
+    .journey-step:not(:last-child)::after {
+      content: "→";
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--orange);
+      font-weight: 800;
+      font-size: 1.1rem;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .step-num {
+      width: 40px; height: 40px; border-radius: 12px;
+      background: var(--orange); color: #fff;
+      display: grid; place-items: center;
+      font-weight: 800; font-size: 1rem;
+      margin: 0 auto 12px;
+    }
+    .journey-step h4 {
+      font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; color: var(--plum);
+    }
+    .journey-step p {
+      font-size: 0.86rem; color: var(--muted);
+      font-weight: 500; line-height: 1.45;
+    }
+
+    .expect-panel {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    .expect-item {
+      padding: 26px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .expect-item:not(:last-child) {
+      border-right: 1px solid var(--line);
+    }
+    .expect-item .ico {
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      display: grid; place-items: center;
+    }
+    .expect-item p {
+      font-weight: 700;
+      color: var(--plum);
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-line;
+    }
+
+    /* FAQ + final CTA — shared plum band */
+    .faq {
+      background: #4A1838;
+      color: #fff;
+      padding: 80px 0 0;
+    }
+    .faq .title { color: #fff; }
+    .faq .kicker { color: var(--orange); }
+    .faq-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px 20px;
+      max-width: 1000px; margin-inline: auto;
+    }
+    .faq-item {
+      background: #fff; border: 1px solid rgba(255,255,255,0.12); border-radius: 16px;
+      padding: 4px 16px; transition: border-color .2s;
+    }
+    .faq-item.open { border-color: rgba(196,120,58,0.55); }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      padding: 16px 0; text-align: left; cursor: pointer;
+      font-size: 1rem; font-weight: 700; color: var(--plum);
+    }
+    .faq-q .plus {
+      width: 28px; height: 28px; border-radius: 50%; flex-shrink: 0;
+      background: var(--orange-soft); color: var(--orange);
+      display: grid; place-items: center; font-size: 1.2rem; font-weight: 500;
+      transition: transform .25s, background .25s, color .25s;
+    }
+    .faq-item.open .faq-q .plus {
+      transform: rotate(45deg); background: var(--orange); color: #fff;
+    }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-item.open .faq-a { max-height: 220px; padding-bottom: 14px; }
+    .faq-a p { color: var(--muted); font-weight: 500; font-size: 0.92rem; }
+
+    /* Final CTA (continues plum band) */
+    .final-wrap { padding: 40px 0 72px; background: #4A1838; }
+    .final-cta {
+      border-radius: 28px;
+      background: linear-gradient(125deg, var(--plum-deep), #5A2145 50%, var(--plum-mid));
+      color: #fff;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      position: relative; overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+    }
+    .final-cta::before {
+      content: ""; position: absolute; width: 280px; height: 280px;
+      right: -40px; top: -60px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,120,58,0.45), transparent 65%);
+    }
+    .final-top {
+      position: relative; z-index: 1;
+      display: flex; align-items: center; justify-content: space-between; gap: 28px;
+    }
+    .final-copy { max-width: 520px; }
+    .final-copy h2 {
+      font-size: clamp(1.8rem, 2.6vw, 2.4rem); font-weight: 800;
+      letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 10px;
+    }
+    .final-copy p { opacity: 0.9; font-weight: 500; }
+    .final-cta .btn-orange { flex-shrink: 0; padding: 16px 28px; }
+    .final-notes {
+      position: relative; z-index: 1;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.16);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--plum-deep); color: rgba(255,255,255,0.85); padding: 40px 0 24px;
+    }
+    .footer-inner {
+      width: min(100% - 40px, 1280px); margin-inline: auto;
+      display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap;
+    }
+    .footer-brand {
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px 14px 8px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+    .footer-brand img { height: 40px; width: auto; }
+    .footer-brand .brand-tagline {
+      color: #6B6570;
+      font-size: 0.62rem;
+      white-space: normal;
+      max-width: 220px;
+    }
+    .footer-contact { display: flex; gap: 32px; flex-wrap: wrap; }
+    .contact-item { display: flex; gap: 10px; align-items: flex-start; max-width: 220px; }
+    .contact-item svg { color: var(--orange); flex-shrink: 0; margin-top: 3px; }
+    .contact-item p, .contact-item a {
+      font-size: 0.9rem; font-weight: 500; white-space: pre-line; line-height: 1.5;
+    }
+    .contact-item a:hover { color: var(--orange); }
+    .footer-bottom {
+      width: min(100% - 40px, 1280px); margin: 28px auto 0;
+      padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12);
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      font-size: 0.75rem; color: rgba(255,255,255,0.45);
+    }
+
+    /* Mobile bottom island — wrapper stays in visual viewport */
+    .mobile-island-dock {
+      display: none;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 200;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+      pointer-events: none;
+      box-sizing: border-box;
+    }
+    .mobile-island {
+      pointer-events: auto;
+      display: flex;
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+      width: 100%;
+      max-width: 420px;
+      margin-inline: auto;
+      border-radius: 999px;
+      background: var(--plum);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 16px 40px rgba(47, 15, 36, 0.35);
+      transform: none;
+      box-sizing: border-box;
+    }
+    .island-side {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: background .2s, color .2s, transform .2s;
+    }
+    .island-side.island-imessage {
+      background: #0A84FF;
+      border-color: #0076ef;
+    }
+    .island-side.island-call {
+      background: #FF3B30;
+      border-color: #e6352b;
+    }
+    .island-side:hover,
+    .island-side:active {
+      color: #fff;
+      transform: scale(1.04);
+      filter: brightness(1.08);
+    }
+    .island-side svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    .island-consult {
+      flex: 1;
+      min-width: 0;
+      height: 46px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--orange);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      box-shadow: 0 8px 20px rgba(196, 120, 58, 0.35);
+      transition: background .2s, transform .2s;
+    }
+    .island-consult:hover,
+    .island-consult:active {
+      background: var(--orange-hot);
+      transform: translateY(-1px);
+    }
+    .island-consult svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      transition-delay: var(--d, 0ms);
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal.from-left { transform: translateX(-20px); }
+    .reveal.from-right { transform: translateX(20px); }
+    .reveal.from-left.visible,
+    .reveal.from-right.visible { transform: none; }
+    .reveal.scale-in { transform: scale(0.92); }
+    .reveal.scale-in.visible { transform: none; }
+
+    @keyframes fadeRise {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes softFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.08); }
+    }
+    @keyframes skinShimmer {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    @keyframes checkPop {
+      0% { transform: scale(0.6); opacity: 0; }
+      60% { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes spotFade {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.15); }
+    }
+    @keyframes btnGlow {
+      0%, 100% { box-shadow: 0 10px 28px rgba(196, 120, 58, 0.35); }
+      50% { box-shadow: 0 14px 36px rgba(196, 120, 58, 0.55); }
+    }
+
+    .hero-copy > * {
+      opacity: 0;
+      animation: fadeRise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .hero-copy > *:nth-child(1) { animation-delay: 0.05s; }
+    .hero-copy > *:nth-child(2) { animation-delay: 0.18s; }
+    .hero-copy > *:nth-child(3) { animation-delay: 0.32s; }
+    .hero-copy > *:nth-child(4) { animation-delay: 0.46s; }
+    .hero-copy > *:nth-child(5) { animation-delay: 0.6s; }
+    .hero-highlight {
+      opacity: 0;
+      animation: fadeRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+    }
+    .hero-bullets li.visible-tick::before {
+      animation: checkPop 0.45s ease forwards;
+    }
+    .hero-actions .btn-orange {
+      animation: btnGlow 2.8s ease-in-out infinite;
+      animation-delay: 1.2s;
+    }
+    .hero-glow {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(40px);
+      animation: glowPulse 5s ease-in-out infinite;
+    }
+    .hero-glow.g1 {
+      width: 220px; height: 220px;
+      background: rgba(196, 120, 58, 0.35);
+      left: 8%; top: 18%;
+    }
+    .hero-glow.g2 {
+      width: 180px; height: 180px;
+      background: rgba(232, 196, 154, 0.28);
+      right: 18%; bottom: 22%;
+      animation-delay: 1.4s;
+    }
+    .hero-glow.g3 {
+      width: 140px; height: 140px;
+      background: rgba(255, 255, 255, 0.12);
+      left: 40%; bottom: 12%;
+      animation-delay: 2.2s;
+    }
+    .skin-orbits {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .skin-spot {
+      position: absolute;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: rgba(196, 120, 58, 0.55);
+      animation: spotFade 4s ease-in-out infinite;
+    }
+    .skin-spot:nth-child(1) { left: 12%; top: 30%; animation-delay: 0s; }
+    .skin-spot:nth-child(2) { left: 22%; top: 62%; width: 7px; height: 7px; animation-delay: 0.8s; }
+    .skin-spot:nth-child(3) { left: 70%; top: 28%; width: 8px; height: 8px; animation-delay: 1.4s; }
+    .skin-spot:nth-child(4) { left: 82%; top: 55%; animation-delay: 2s; }
+    .skin-spot:nth-child(5) { left: 55%; top: 75%; width: 6px; height: 6px; animation-delay: 2.6s; }
+
+    .concern-card,
+    .benefit,
+    .ba-card,
+    .journey-step,
+    .faq-item,
+    .contact-detail,
+    .lead-form,
+    .hero-highlight {
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+    .concern-card:hover,
+    .benefit:hover,
+    .ba-card:hover,
+    .journey-step:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(47, 15, 36, 0.16);
+    }
+    .hero-highlight:hover { transform: translateY(-4px); }
+    .tech-media img {
+      transition: transform 0.8s ease;
+    }
+    .tech-media:hover img { transform: scale(1.04); }
+    .check-list li {
+      opacity: 0;
+      transform: translateX(-12px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+      transition-delay: var(--d, 0ms);
+    }
+    .check-list.animated li {
+      opacity: 1;
+      transform: none;
+    }
+    .step-num {
+      animation: softFloat 3.5s ease-in-out infinite;
+    }
+    .journey-step:nth-child(2) .step-num { animation-delay: 0.4s; }
+    .journey-step:nth-child(3) .step-num { animation-delay: 0.8s; }
+    .journey-step:nth-child(4) .step-num { animation-delay: 1.2s; }
+    .kicker {
+      background-size: 200% 100%;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .reveal, .hero-copy > *, .hero-highlight, .check-list li {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .benefit-grid { grid-template-columns: 1fr 1fr; }
+      .concern-grid { grid-template-columns: 1fr 1fr; }
+      .concern-card.featured { grid-row: auto; min-height: 240px; }
+      .concern-card.concern-wide { grid-column: span 2; }
+    }
+    @media (max-width: 960px) {
+      .nav { display: none; }
+      .header-inner > .header-ctas { display: none; }
+      .header-social { display: none; }
+      .menu-toggle { display: inline-flex; }
+      .brand-tagline {
+        white-space: normal;
+        font-size: 0.58rem;
+        max-width: 160px;
+      }
+      .header-inner { min-height: 72px; align-items: center; }
+      .hero {
+        min-height: auto;
+        padding: 36px 0 40px;
+      }
+      .hero-shell {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        width: min(100% - 32px, 1280px);
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      .hero-copy {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+      }
+      .hero-glow,
+      .skin-orbits { display: none; }
+      .reveal.from-left,
+      .reveal.from-right {
+        transform: translateY(24px);
+      }
+      .hero-copy h1,
+      .hero-copy .lead {
+        text-shadow: 0 2px 18px rgba(47, 15, 36, 0.55);
+      }
+      .hero-copy h1 { max-width: none; font-size: clamp(2.9rem, 9.5vw, 3.5rem); }
+      .hero-copy .lead { max-width: 42ch; }
+      .hero-actions {
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 100%;
+        gap: 8px;
+        box-sizing: border-box;
+      }
+      .hero-actions .btn-ghost {
+        display: none;
+      }
+      .hero-actions .btn-orange {
+        flex: 1 1 100%;
+        width: 100%;
+        white-space: nowrap;
+        padding: 16px 22px;
+        font-size: 0.92rem;
+        border-radius: 999px;
+      }
+      .eyebrow {
+        background: #fff;
+        color: var(--plum);
+        border-color: rgba(74, 24, 56, 0.12);
+        box-shadow: 0 8px 24px rgba(47, 15, 36, 0.16);
+      }
+      .eyebrow i { background: var(--orange); }
+      .hero-bullets {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 20px;
+        box-sizing: border-box;
+      }
+      .hero-bullets li {
+        font-size: 0.8rem;
+        line-height: 1.35;
+        min-height: 0;
+        align-items: flex-start;
+        text-align: left;
+        border-radius: 14px;
+        padding: 12px 12px;
+        text-shadow: none;
+        color: var(--plum);
+        border: 1px solid transparent;
+        box-shadow: 0 8px 22px rgba(47, 15, 36, 0.14);
+      }
+      .hero-bullets li:nth-child(1) {
+        background: #FFE4CC;
+        border-color: rgba(196, 120, 58, 0.25);
+      }
+      .hero-bullets li:nth-child(2) {
+        background: #D6ECFF;
+        border-color: rgba(10, 132, 255, 0.22);
+      }
+      .hero-bullets li:nth-child(3) {
+        background: #F3E4FF;
+        border-color: rgba(122, 74, 168, 0.22);
+      }
+      .hero-bullets li:nth-child(4) {
+        background: #FFF0B8;
+        border-color: rgba(196, 150, 40, 0.28);
+      }
+      .hero-bullets li::before {
+        color: var(--plum);
+      }
+      .hero-highlight { max-width: none; margin-left: 0; align-self: stretch; }
+      .hero-highlight-media { aspect-ratio: 2 / 3; }
+      .contact-grid { grid-template-columns: 1fr; gap: 28px; }
+      .field-message textarea { min-height: 100px; }
+      .hero-bg img {
+        object-position: center 18%;
+      }
+      .hero-bg::after {
+        background:
+          linear-gradient(180deg,
+            rgba(74, 24, 56, 0.42) 0%,
+            rgba(74, 24, 56, 0.55) 28%,
+            rgba(74, 24, 56, 0.72) 55%,
+            rgba(74, 24, 56, 0.88) 100%),
+          radial-gradient(ellipse 90% 55% at 50% 42%, rgba(74, 24, 56, 0.35) 0%, transparent 70%);
+      }
+      .concern-grid { grid-template-columns: 1fr; gap: 16px; }
+      .concern-card,
+      .concern-card.featured,
+      .concern-card.concern-wide {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow-soft);
+        overflow: hidden;
+      }
+      .concern-card img {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      .concern-card .overlay {
+        position: relative;
+        inset: auto;
+        background: #fff;
+        color: var(--ink);
+        padding: 16px 18px 18px;
+        justify-content: flex-start;
+      }
+      .concern-card h3 {
+        color: var(--plum);
+        font-size: 1.12rem;
+        margin-bottom: 6px;
+      }
+      .concern-card p {
+        color: var(--muted);
+        opacity: 1;
+        font-size: 0.88rem;
+        line-height: 1.45;
+      }
+      .concern-card:hover img { transform: scale(1.02); }
+      .tech-grid, .faq-grid { grid-template-columns: 1fr; }
+      .journey-steps { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .journey-step:not(:last-child)::after { display: none; }
+      .final-cta { text-align: center; padding: 36px 24px; }
+      .final-top { flex-direction: column; text-align: center; }
+      .final-copy { max-width: none; }
+      .final-ctas { justify-content: center; }
+      .serving-note, .edu-disclaimer { text-align: center; }
+      .form-row { grid-template-columns: 1fr; }
+      .mobile-island-dock { display: block; }
+      body { padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px)); }
+      .cert-strip-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+      }
+      .cert-strip-copy {
+        text-align: center;
+      }
+      .cert-strip-copy p {
+        margin-inline: auto;
+      }
+    }
+    @media (max-width: 640px) {
+      .concern-grid,
+      .benefit-grid,
+      .ba-row,
+      .expect-panel,
+      .journey-steps {
+        grid-template-columns: 1fr;
+      }
+      .concern-card.featured,
+      .concern-card.concern-wide {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 0;
+      }
+      .expect-item:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+      .stats-row { gap: 8px; }
+      .stat-chip { min-width: calc(50% - 4px); flex: 1; }
+      .footer-contact { flex-direction: column; gap: 14px; }
+      section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="Root Hair & Skin">
+        <img src="assets/logo.jpg" alt="root hair & skin" width="260" height="58" />
+        <span class="brand-tagline">Where Aesthetics Meets Science &amp; Artistry</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#assessment">Assessment</a>
+        <a href="#about">Technology</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="social-links header-social" aria-label="Social media">
+        <a href="https://www.facebook.com/RootHairandSkin" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37.4 1.2V25.8c-13.3-1.8-40.7-2.8-56.6-2.8-86.7 0-134 42.2-134 136.4v53.1H14v97.8h66z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/roothairandskin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/root-hair-and-skin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1-.5 53.8-.5 107.7 24.1 107.7 53.8s-24.1 54.3-53.9 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@dr_and_dr" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C16 167 16 256.4 16 256.4s0 89.4 10.3 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 10.3-42.9 10.3-132.3 10.3-132.3s0-89.4-10.3-132.3zM232.2 337.6V175.2l142.7 81.2-142.7 81.2z"/></svg>
+        </a>
+      </div>
+      <div class="header-ctas">
+        <a class="btn btn-ghost" href="tel:+14255521339">Call (425) 552-1339</a>
+        <a class="btn btn-orange" href="#contact">Request a Consultation</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#assessment">Assessment</a>
+      <a href="#about">Technology</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <div class="social-links mobile-social" aria-label="Social media">
+        <a href="https://www.facebook.com/RootHairandSkin" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37.4 1.2V25.8c-13.3-1.8-40.7-2.8-56.6-2.8-86.7 0-134 42.2-134 136.4v53.1H14v97.8h66z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/roothairandskin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/root-hair-and-skin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1-.5 53.8-.5 107.7 24.1 107.7 53.8s-24.1 54.3-53.9 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@dr_and_dr" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C16 167 16 256.4 16 256.4s0 89.4 10.3 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 10.3-42.9 10.3-132.3 10.3-132.3s0-89.4-10.3-132.3zM232.2 337.6V175.2l142.7 81.2-142.7 81.2z"/></svg>
+        </a>
+      </div>
+      <a class="btn btn-ghost" href="tel:+14255521339" style="width:100%;margin-top:8px;text-align:center;">Call (425) 552-1339</a>
+      <a class="btn btn-orange" href="#contact">Request a Consultation</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 960px)" srcset="assets/hero-bg-mobile.jpg" />
+          <img src="assets/hero-bg.jpg" alt="" width="1920" height="1080" />
+        </picture>
+      </div>
+      <div class="hero-glow g1" aria-hidden="true"></div>
+      <div class="hero-glow g2" aria-hidden="true"></div>
+      <div class="hero-glow g3" aria-hidden="true"></div>
+      <div class="skin-orbits" aria-hidden="true">
+        <span class="skin-spot"></span>
+        <span class="skin-spot"></span>
+        <span class="skin-spot"></span>
+        <span class="skin-spot"></span>
+        <span class="skin-spot"></span>
+      </div>
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><i></i> Pigmentation &amp; Sun Damage · Bellevue</div>
+          <h1>See a clearer, <span>more even-looking</span> complexion</h1>
+          <p class="lead">Brown spots and uneven tone can have different causes—and the right diagnosis matters. Stellar M22 XPL uses precisely selected pulses of light to target suitable pigment while surrounding skin is preserved. At Root Hair &amp; Skin, every plan begins with a clinical assessment, not a one-size-fits-all photofacial.</p>
+          <div class="hero-actions">
+            <a class="btn btn-orange" href="#contact">Request a Consultation</a>
+            <a class="btn btn-ghost" href="tel:+14255521339">Call (425) 552-1339</a>
+          </div>
+          <ul class="hero-bullets">
+            <li>Personalized filters and settings</li>
+            <li>Minimal downtime for many patients</li>
+            <li>Targets suitable sun spots and visible brown pigmentation</li>
+            <li>Physician-founded cosmetic dermatology clinic</li>
+          </ul>
+        </div>
+        <aside class="hero-highlight">
+          <div class="hero-highlight-media">
+            <img src="assets/hero-card-m22.jpg" alt="Stellar M22 XPL treatment device at Root Hair &amp; Skin" width="1024" height="1536" loading="eager" />
+          </div>
+          <div class="hero-highlight-body">
+            <div class="location">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l1.8 5.5H20l-4.5 3.3 1.7 5.2L12 13.8 6.8 17l1.7-5.2L4 8.5h6.2L12 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              Stellar M22 XPL · Bellevue
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust" aria-hidden="true">
+      <div class="trust-track">
+        <span>Physician-founded</span>
+        <span>Board-certified dermatologist-guided protocols</span>
+        <span>Personalized treatment</span>
+        <span>Bellevue, WA</span>
+        <span>Physician-founded</span>
+        <span>Board-certified dermatologist-guided protocols</span>
+        <span>Personalized treatment</span>
+        <span>Bellevue, WA</span>
+      </div>
+    </div>
+
+    <section class="cert-strip" aria-label="LegitScript certification">
+      <div class="cert-strip-inner reveal">
+        <a class="cert-seal cert-seal-inline" href="https://www.legitscript.com/websites/?searchquery=roothairskin.com" target="_blank" rel="noopener noreferrer" aria-label="LegitScript Certified — verify Root Hair &amp; Skin">
+          <img src="assets/legitscript-certified.png" alt="LegitScript Certified" width="292" height="316" loading="lazy" />
+        </a>
+        <div class="cert-strip-copy">
+          <strong>LegitScript Certified</strong>
+          <p>Root Hair &amp; Skin is LegitScript certified—an independent compliance credential for healthcare businesses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / ASSESSMENT -->
+    <section class="concerns" id="assessment">
+      <div class="wrap">
+        <div class="center">
+          <span class="kicker reveal">Problem / assessment</span>
+          <h2 class="title reveal">Not every dark spot should<br />be treated the same way</h2>
+          <p class="subtitle reveal">Freckles, solar lentigines, post-inflammatory pigment, and melasma can look similar but may require different strategies. Treating the wrong pigment can be ineffective or can worsen discoloration. Our team evaluates your skin type, recent tanning, medications, and pigment pattern before recommending XPL.</p>
+        </div>
+        <div class="concern-grid">
+          <article class="concern-card featured reveal">
+            <img src="assets/concern-sun-spots.png" alt="Sun spots / solar lentigines" loading="lazy" />
+            <div class="overlay"><h3>Sun spots / solar lentigines</h3><p>Visible brown spots often linked to cumulative sun exposure</p></div>
+          </article>
+          <article class="concern-card reveal">
+            <img src="assets/concern-uneven-tone.png" alt="Freckles" loading="lazy" />
+            <div class="overlay"><h3>Freckles</h3><p>Scattered pigment that may look similar to other spot types</p></div>
+          </article>
+          <article class="concern-card reveal">
+            <img src="assets/concern-pigmentation.png" alt="Uneven brown pigmentation" loading="lazy" />
+            <div class="overlay"><h3>Uneven brown pigmentation</h3><p>Blotchy or mixed tone concerns when clinically appropriate</p></div>
+          </article>
+          <article class="concern-card concern-wide reveal">
+            <img src="assets/concern-photoaging.png" alt="Photodamage" loading="lazy" />
+            <div class="overlay"><h3>Photodamage</h3><p>Sun-related changes on suitable treatment areas</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="technology" id="about">
+      <div class="wrap">
+        <div class="tech-grid">
+          <div class="tech-media reveal">
+            <img src="assets/clinic-device.png" alt="Stellar M22 XPL in clinic" loading="lazy" />
+            <span class="tag">Stellar M22 XPL</span>
+          </div>
+          <div class="reveal">
+            <span class="kicker">Technology</span>
+            <h2 class="title">How XPL targets visible pigment</h2>
+            <p class="subtitle" style="margin-bottom:18px">XPL delivers filtered pulses of light that are absorbed by selected pigment. Treated spots may temporarily darken before gradually flaking or fading as the skin clears targeted pigment. Response varies, and strict sun protection is important.</p>
+            <ul class="check-list">
+              <li><span class="tick">✓</span><span>Sun spots / solar lentigines</span></li>
+              <li><span class="tick">✓</span><span>Freckles</span></li>
+              <li><span class="tick">✓</span><span>Uneven-looking brown pigmentation</span></li>
+              <li><span class="tick">✓</span><span>Photodamage on suitable treatment areas</span></li>
+              <li><span class="tick">✓</span><span>Mixed tone concerns when clinically appropriate</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ROOT -->
+    <section class="benefits" id="why-root">
+      <div class="wrap">
+        <div class="center">
+          <span class="kicker reveal">Why choose Root Hair &amp; Skin?</span>
+          <h2 class="title reveal">Physician-founded care with personalized recommendations</h2>
+          <p class="subtitle reveal">Evidence-based, natural-looking aesthetic philosophy at our Bellevue clinic serving the Eastside.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit reveal">
+            <div class="benefit-num">01</div>
+            <h3>Physician-founded
+cosmetic dermatology</h3>
+            <p>A clinic built around clinical assessment—not one-size-fits-all packages.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-num">02</div>
+            <h3>Board-certified
+dermatologist guidance</h3>
+            <p>Protocols guided by board-certified dermatologist Natalie Kash, MD, FAAD.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-num">03</div>
+            <h3>Personalized
+recommendations</h3>
+            <p>Filters and settings tailored to your skin type, pigment pattern, and goals.</p>
+          </article>
+          <article class="benefit reveal">
+            <div class="benefit-num">04</div>
+            <h3>Convenient
+Bellevue location</h3>
+            <p>Serving Bellevue and surrounding Eastside communities with natural-looking aesthetics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS / BEFORE & AFTER -->
+    <section class="results" id="results">
+      <div class="wrap">
+        <div class="results-intro reveal">
+          <span class="kicker">Process</span>
+          <h2 class="title">What to expect with XPL</h2>
+          <p>Every plan begins with assessment. Your experience and number of sessions may differ based on pigment type and candidacy.</p>
+        </div>
+
+        <div class="ba-row reveal">
+          <div class="ba-card">
+            <img src="assets/pigmentation-00.png" alt="Pigmentation before and after — courtesy of Olha Snitsar, MD" loading="lazy" width="800" height="700" />
+          </div>
+          <div class="ba-card">
+            <img src="assets/pigmentation-01.png" alt="Pigmentation before and after — courtesy of in-house clinic" loading="lazy" width="800" height="700" />
+          </div>
+          <div class="ba-card">
+            <img src="assets/pigmentation-02.png" alt="Pigmentation before and after — courtesy of Olha Snitsar, MD" loading="lazy" width="800" height="700" />
+          </div>
+        </div>
+        <p class="disclaimer reveal">Individual results vary. Information on this page is educational and does not replace a consultation or medical advice.</p>
+      </div>
+    </section>
+
+    <!-- JOURNEY + CANDIDACY -->
+    <section class="journey" id="journey">
+      <div class="wrap">
+        <div class="journey-block reveal">
+          <h3>What happens at each step</h3>
+          <div class="journey-steps">
+            <div class="journey-step">
+              <div class="step-num">1</div>
+              <h4>Assessment</h4>
+              <p>We identify the likely pigment type and screen for factors that may change candidacy or risk.</p>
+            </div>
+            <div class="journey-step">
+              <div class="step-num">2</div>
+              <h4>Treatment</h4>
+              <p>Customized pulses are delivered; a warm snapping or prickling sensation may be felt.</p>
+            </div>
+            <div class="journey-step">
+              <div class="step-num">3</div>
+              <h4>Early response</h4>
+              <p>Temporary redness, itching, darkening of spots, or rough texture can occur for hours to days.</p>
+            </div>
+            <div class="journey-step">
+              <div class="step-num">4</div>
+              <h4>Treatment series</h4>
+              <p>Many patients need 4–6 sessions depending on the concern, with maintenance sometimes recommended. Your plan may differ.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="expect-panel reveal">
+          <div class="expect-item">
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="11" cy="12" r="3.5" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="12" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M5 25c1.2-3.5 3.8-5.5 6-5.5s4.8 2 6 5.5M15 25c1.2-3.5 3.8-5.5 6-5.5s4.8 2 6 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <p>Suitable visible brown spots
+or photodamage</p>
+          </div>
+          <div class="expect-item">
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><rect x="6" y="8" width="20" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 13h20M11 6v4M21 6v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <p>No recent tan—and able
+to avoid sun as directed</p>
+          </div>
+          <div class="expect-item">
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="2"/><path d="M16 6v3M16 23v3M6 16h3M23 16h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <p>Medications &amp; skin history
+reviewed with the clinician</p>
+          </div>
+        </div>
+        <p class="clinical-note reveal"><strong>Who may be a candidate?</strong> A consultation is required. Melasma and some pigmentation may require a different approach. Treatment may be postponed or changed based on pregnancy status, medications, active infection or inflammation, recent tanning, photosensitivity, prior pigment reactions, or other medical factors. The treating clinician determines candidacy.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="wrap">
+        <div class="center">
+          <span class="kicker reveal">FAQ</span>
+          <h2 class="title reveal">Frequently asked questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is XPL the same as a laser?</span><span class="plus">+</span></button>
+            <div class="faq-a"><p>XPL is an advanced intense pulsed light technology. Unlike a single-wavelength laser, it uses selected bands of light for appropriate pigment and vascular targets.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Will dark spots disappear permanently?</span><span class="plus">+</span></button>
+            <div class="faq-a"><p>No permanent result should be promised. Treated pigment may improve, but new sun damage can develop and some conditions recur. Sun protection and maintenance matter.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Can XPL treat melasma?</span><span class="plus">+</span></button>
+            <div class="faq-a"><p>Melasma can be complex and may worsen with heat or light in some patients. It must be assessed individually; XPL is not advertised as a universal melasma treatment.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false"><span>What happens after treatment?</span><span class="plus">+</span></button>
+            <div class="faq-a"><p>Some targeted spots may darken temporarily before fading. Redness, itching, swelling, or rough texture can also occur.</p></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Is XPL suitable for every skin tone?</span><span class="plus">+</span></button>
+            <div class="faq-a"><p>Candidacy and settings depend on skin tone, pigment type, recent sun exposure, and individual risk. A consultation is essential.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-wrap">
+      <div class="wrap">
+        <div class="final-cta reveal">
+          <div class="final-top">
+            <div class="final-copy">
+              <h2>Get an expert assessment before treating pigmentation</h2>
+              <p>Request a consultation at our Bellevue clinic to learn whether XPL is appropriate for your spots, skin type, and goals.</p>
+            </div>
+            <div class="final-ctas">
+              <a class="btn btn-orange" href="#contact">Request a Consultation</a>
+              <a class="btn btn-ghost" href="tel:+14255521339">Call (425) 552-1339</a>
+            </div>
+          </div>
+          <div class="final-notes">
+            <p class="serving-note">Serving Bellevue, Mercer Island, Kirkland, Issaquah, Sammamish, Redmond, and surrounding Eastside communities.</p>
+            <p class="edu-disclaimer">Individual results vary. Information on this page is educational and does not replace a consultation or medical advice.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="kicker">Get in touch</span>
+            <h2 class="title">Contact us</h2>
+            <p>Tell us your concern—we’ll follow up to schedule your assessment at our Bellevue clinic.</p>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.3" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div>
+                  <strong>Visit</strong>
+                  <p>1800 116th Ave NE, STE 102
+Bellevue, WA 98004</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A14.5 14.5 0 0 1 4.5 6.5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/></svg>
+                <div>
+                  <strong>Call</strong>
+                  <a href="tel:+14255521339">(425) 552-1339</a>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:info@roothairskin.com">info@roothairskin.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="lead-form reveal" id="leadForm" novalidate>
+            <h2>Request my consultation</h2>
+            <p class="sub">Tell us your concern—we’ll follow up to schedule your assessment.</p>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" />
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="(425) 000-0000" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="concern">Primary Concern</label>
+                <select id="concern" name="concern" required>
+                  <option value="" disabled selected>Select your concern</option>
+                  <option value="sun-spots">Sun spots / solar lentigines</option>
+                  <option value="freckles">Freckles</option>
+                  <option value="brown-pigment">Uneven-looking brown pigmentation</option>
+                  <option value="photodamage">Photodamage</option>
+                  <option value="mixed">Mixed tone concerns</option>
+                  <option value="unsure">Not sure—need assessment</option>
+                </select>
+              </div>
+              <div class="field field-message">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Share anything else about your skin concerns or goals"></textarea>
+              </div>
+              <button class="btn-submit" type="submit">Request My Consultation</button>
+            </div>
+            <p class="form-note">Clinical assessment required · Individual results may vary</p>
+            <div class="form-success" role="status">Thank you! Our team will contact you shortly.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-wrap">
+        <div class="footer-brand-row">
+          <div class="footer-brand">
+            <img src="assets/logo.jpg" alt="root hair & skin" width="220" height="50" />
+            <span class="brand-tagline">Where Aesthetics Meets Science &amp; Artistry</span>
+          </div>
+          <a class="cert-seal" href="https://www.legitscript.com/websites/?searchquery=roothairskin.com" target="_blank" rel="noopener noreferrer" aria-label="LegitScript Certified — verify Root Hair &amp; Skin">
+            <img src="assets/legitscript-certified.png" alt="LegitScript Certified" width="292" height="316" loading="lazy" />
+          </a>
+        </div>
+        <div class="social-links" aria-label="Social media">
+          <a href="https://www.facebook.com/RootHairandSkin" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 320 512" aria-hidden="true"><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4.4 37.4 1.2V25.8c-13.3-1.8-40.7-2.8-56.6-2.8-86.7 0-134 42.2-134 136.4v53.1H14v97.8h66z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/roothairandskin/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/root-hair-and-skin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 448 512" aria-hidden="true"><path d="M100.3 448H7.4V148.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1-.5 53.8-.5 107.7 24.1 107.7 53.8s-24.1 54.3-53.9 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@dr_and_dr" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 576 512" aria-hidden="true"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C16 167 16 256.4 16 256.4s0 89.4 10.3 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 10.3-42.9 10.3-132.3 10.3-132.3s0-89.4-10.3-132.3zM232.2 337.6V175.2l142.7 81.2-142.7 81.2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.3" stroke="currentColor" stroke-width="1.8"/></svg>
+          <p>1800 116th Ave NE,
+STE 102
+Bellevue, WA 98004</p>
+        </div>
+        <div class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 4.5h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A14.5 14.5 0 0 1 4.5 6.5a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="1.6"/></svg>
+          <a href="tel:+14255521339">(425) 552-1339</a>
+        </div>
+        <div class="contact-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <a href="mailto:info@roothairskin.com">info@roothairskin.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Root Hair &amp; Skin. All rights reserved.</span>
+      <span>Individual results vary · Educational information only</span>
+    </div>
+  </footer>
+
+  <div class="mobile-island-dock" id="mobileIslandDock">
+    <nav class="mobile-island" aria-label="Quick actions">
+      <a class="island-side island-imessage" href="sms:+14255521339" aria-label="Message us on iMessage">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 5.9 2 10.7c0 2.8 1.5 5.3 3.9 6.9-.1.9-.6 2.5-2.1 3.6 2.3-.1 4.1-1.1 5.2-1.9.9.2 1.9.3 2.9.3 5.5 0 10-3.9 10-8.9S17.5 2 12 2z"/></svg>
+      </a>
+      <a class="island-consult" href="#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 4-6 4.5L6 8V6l6 4.5L18 6v2z"/></svg>
+        Consult Now
+      </a>
+      <a class="island-side island-call" href="tel:+14255521339" aria-label="Call (425) 552-1339">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.9z"/></svg>
+      </a>
+    </nav>
+  </div>
+
+  <script>
+    (function () {
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      const islandDock = document.getElementById("mobileIslandDock");
+      const placeIslandDock = () => {
+        if (!islandDock) return;
+        const mobile = window.matchMedia("(max-width: 960px)").matches;
+        if (!mobile) {
+          islandDock.style.top = "";
+          islandDock.style.bottom = "";
+          islandDock.style.transform = "";
+          return;
+        }
+        const vv = window.visualViewport;
+        if (!vv) {
+          islandDock.style.top = "";
+          islandDock.style.bottom = "0";
+          islandDock.style.transform = "";
+          return;
+        }
+        // Keep dock locked to the visible viewport (fixes iOS URL-bar / keyboard jumps)
+        const offsetFromLayoutBottom = Math.max(0, window.innerHeight - (vv.offsetTop + vv.height));
+        islandDock.style.bottom = offsetFromLayoutBottom + "px";
+        islandDock.style.top = "auto";
+        islandDock.style.transform = "translateZ(0)";
+      };
+      placeIslandDock();
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", placeIslandDock);
+        window.visualViewport.addEventListener("scroll", placeIslandDock);
+      }
+      window.addEventListener("resize", placeIslandDock);
+      window.addEventListener("orientationchange", () => setTimeout(placeIslandDock, 50));
+
+      const toggle = document.querySelector(".menu-toggle");
+      const mobileNav = document.getElementById("mobileNav");
+      if (toggle && mobileNav) {
+        toggle.addEventListener("click", () => {
+          const open = mobileNav.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        mobileNav.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            mobileNav.classList.remove("open");
+            toggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const btn = item.querySelector(".faq-q");
+        btn.addEventListener("click", () => {
+          const isOpen = item.classList.contains("open");
+          document.querySelectorAll(".faq-item.open").forEach((el) => {
+            el.classList.remove("open");
+            el.querySelector(".faq-q").setAttribute("aria-expanded", "false");
+          });
+          if (!isOpen) {
+            item.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+
+      const form = document.getElementById("leadForm");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.reportValidity(); return; }
+
+          const lead = {
+            name: (form.name && form.name.value || "").trim(),
+            phone: (form.phone && form.phone.value || "").trim(),
+            email: (form.email && form.email.value || "").trim(),
+            concern: (form.concern && form.concern.value || "").trim(),
+            message: (form.message && form.message.value || "").trim()
+          };
+
+          trackEvent("form", { lead: lead }).finally(function () {
+            form.classList.add("submitted");
+          });
+        });
+      }
+
+      /* ---- Marketing attribution + Apps Script trackers ---- */
+      // After deploying Apps Script, paste the Web App URL here:
+      const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwuAfrJMAj7jt9964aATOdaWkaMV0Wb5D41KuyGvKLD79GM-qwxWxtyoYQwGbLEuviGJQ/exec";
+      const ATTR_KEYS = [
+        "gclid", "gbraid", "wbraid", "fbclid", "msclkid",
+        "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id"
+      ];
+      const ATTR_STORAGE_KEY = "rhs_marketing_attr_v1";
+
+      function readStoredAttribution() {
+        try {
+          return JSON.parse(sessionStorage.getItem(ATTR_STORAGE_KEY) || "{}") || {};
+        } catch (err) {
+          return {};
+        }
+      }
+
+      function captureAttributionFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        const stored = readStoredAttribution();
+        let changed = false;
+        ATTR_KEYS.forEach(function (key) {
+          if (params.has(key) && params.get(key)) {
+            stored[key] = params.get(key);
+            changed = true;
+          }
+        });
+        if (changed) {
+          try { sessionStorage.setItem(ATTR_STORAGE_KEY, JSON.stringify(stored)); } catch (err) {}
+        }
+        return stored;
+      }
+
+      function getAttributionPresentOnly() {
+        const stored = captureAttributionFromUrl();
+        const out = {};
+        ATTR_KEYS.forEach(function (key) {
+          if (stored[key]) out[key] = stored[key];
+        });
+        return out;
+      }
+
+      function hasGclid() {
+        const attr = getAttributionPresentOnly();
+        return !!(attr.gclid && String(attr.gclid).trim());
+      }
+
+      function trackEvent(type, extra) {
+        const attribution = getAttributionPresentOnly();
+        // Call / iMessage: only notify Apps Script when gclid is present
+        if ((type === "call" || type === "imessage") && !attribution.gclid) {
+          return Promise.resolve({ skipped: true });
+        }
+
+        if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf("YOUR_GOOGLE_APPS_SCRIPT") === 0) {
+          console.warn("[RHS trackers] Set APPS_SCRIPT_URL after deploying Apps Script.");
+          return Promise.resolve({ skipped: true, reason: "missing_endpoint" });
+        }
+
+        const payload = {
+          type: type,
+          timestamp: new Date().toISOString(),
+          page: window.location.href,
+          userAgent: navigator.userAgent || ""
+        };
+
+        if (extra && extra.lead) payload.lead = extra.lead;
+
+        // Only attach attribution object when at least one field is present
+        if (Object.keys(attribution).length) {
+          payload.attribution = attribution;
+        }
+
+        return fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        }).catch(function (err) {
+          console.warn("[RHS trackers] send failed", err);
+        });
+      }
+
+      captureAttributionFromUrl();
+
+      document.querySelectorAll('a[href^="tel:"]').forEach(function (el) {
+        el.addEventListener("click", function () {
+          trackEvent("call");
+        });
+      });
+
+      document.querySelectorAll('a[href^="sms:"]').forEach(function (el) {
+        el.addEventListener("click", function () {
+          trackEvent("imessage");
+        });
+      });
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const autoRevealSelectors = [
+        ".concern-card", ".benefit", ".ba-card", ".journey-step",
+        ".faq-item", ".expect-item", ".contact-detail", ".clinical-note",
+        ".results-intro", ".disclaimer", ".final-cta", ".lead-form",
+        ".contact-info", ".tech-media", ".check-list", ".kicker",
+        ".title", ".subtitle", ".ba-row", ".journey-block", ".expect-panel",
+        ".hero-bullets li", ".site-footer .contact-item", ".footer-brand"
+      ];
+      autoRevealSelectors.forEach((sel) => {
+        document.querySelectorAll(sel).forEach((el) => {
+          if (!el.classList.contains("reveal")) el.classList.add("reveal");
+        });
+      });
+
+      document.querySelectorAll(".concern-grid .reveal, .benefit-grid .reveal, .ba-row .ba-card, .journey-steps .reveal, .faq-grid .reveal, .expect-panel .reveal, .hero-bullets li").forEach((el, i) => {
+        el.style.setProperty("--d", `${(i % 8) * 90}ms`);
+      });
+
+      document.querySelectorAll(".tech-grid > .reveal:first-child").forEach((el) => el.classList.add("from-left"));
+      document.querySelectorAll(".tech-grid > .reveal:last-child").forEach((el) => el.classList.add("from-right"));
+      document.querySelectorAll(".ba-card, .lead-form").forEach((el) => el.classList.add("scale-in"));
+
+      const activate = (el) => {
+        el.classList.add("visible");
+        if (el.classList.contains("check-list")) el.classList.add("animated");
+      };
+
+      const reveals = document.querySelectorAll(".reveal");
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              activate(entry.target);
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+        reveals.forEach((el) => io.observe(el));
+      } else {
+        reveals.forEach(activate);
+      }
+
+      document.querySelectorAll(".hero-bullets li").forEach((li, i) => {
+        setTimeout(() => li.classList.add("visible-tick", "visible"), reduceMotion ? 0 : 700 + i * 120);
+      });
+
+      document.querySelectorAll(".check-list li").forEach((li, i) => {
+        li.style.setProperty("--d", `${i * 110}ms`);
+      });
+    })();
+  </script>
+</body>
+</html>
