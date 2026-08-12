@@ -548,8 +548,32 @@
     .btn-submit:hover { background: var(--orange-hot); transform: translateY(-1px); }
     .form-note { margin-top: 10px; font-size: 0.72rem; color: var(--muted); text-align: center; }
     .form-success {
-      display: none; text-align: center; padding: 18px 6px;
-      color: var(--plum); font-weight: 700;
+      display: none;
+      text-align: center;
+      padding: 28px 18px;
+      color: var(--plum);
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(74, 24, 56, 0.12);
+      border-radius: 14px;
+    }
+    .form-success strong {
+      display: block;
+      font-size: 1.35rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .form-success p {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 500;
+      line-height: 1.45;
+      color: var(--text);
+    }
+    .btn-submit:disabled {
+      opacity: 0.7;
+      cursor: wait;
+      transform: none;
     }
     .lead-form.submitted .form-grid,
     .lead-form.submitted h2,
@@ -1891,7 +1915,10 @@ Bellevue, WA 98004</p>
               <button class="btn-submit" type="submit">Request My Consultation</button>
             </div>
             <p class="form-note">Clinical assessment required · Individual results may vary</p>
-            <div class="form-success" role="status">Thank you! Our team will contact you shortly.</div>
+            <div class="form-success" role="status" aria-live="polite">
+              <strong>Thank you!</strong>
+              <p>Your consultation request was submitted successfully. Our team will contact you shortly.</p>
+            </div>
           </form>
         </div>
       </div>
@@ -2034,23 +2061,39 @@ Bellevue, WA 98004</p>
           e.preventDefault();
           if (!form.checkValidity()) { form.reportValidity(); return; }
 
+          const submitBtn = form.querySelector(".btn-submit");
+          const fullName = (form.name && form.name.value || "").replace(/\s+/g, " ").trim();
           const lead = {
-            name: (form.name && form.name.value || "").trim(),
+            name: fullName,
             phone: (form.phone && form.phone.value || "").trim(),
             email: (form.email && form.email.value || "").trim(),
             concern: (form.concern && form.concern.value || "").trim(),
             message: (form.message && form.message.value || "").trim()
           };
 
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Submitting...";
+          }
+
+          const successEl = form.querySelector(".form-success");
+          if (successEl) {
+            const first = fullName.split(" ")[0] || "";
+            successEl.innerHTML =
+              "<strong>Thank you" + (first ? ", " + first : "") + "!</strong>" +
+              "<p>Your consultation request was submitted successfully. Our team will contact you shortly.</p>";
+          }
+
           trackEvent("form", { lead: lead }).finally(function () {
             form.classList.add("submitted");
+            form.scrollIntoView({ behavior: "smooth", block: "center" });
           });
         });
       }
 
       /* ---- Marketing attribution + Apps Script trackers ---- */
       // After deploying Apps Script, paste the Web App URL here:
-      const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwuAfrJMAj7jt9964aATOdaWkaMV0Wb5D41KuyGvKLD79GM-qwxWxtyoYQwGbLEuviGJQ/exec";
+      const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxZsNMtlL5H_0ky3D4lSuP-kGzUeitXBMJsh_cBwYOyWGWL9PEQv26i9pc6vKZ9oX9alw/exec";
       const ATTR_KEYS = [
         "gclid", "gbraid", "wbraid", "fbclid", "msclkid",
         "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id"
