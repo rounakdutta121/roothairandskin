@@ -407,8 +407,9 @@ button, input, select, textarea { font: inherit; }
 
 .candidate {
   background:
-    radial-gradient(700px 320px at 100% 0%, rgba(212, 137, 74, 0.16), transparent 55%),
-    var(--mist);
+    radial-gradient(700px 320px at 100% 0%, rgba(196, 120, 58, 0.18), transparent 55%),
+    radial-gradient(500px 240px at 0% 100%, rgba(74, 24, 56, 0.06), transparent 50%),
+    var(--orange-soft);
 }
 .candidate-grid {
   display: grid; grid-template-columns: 1.05fr 1.05fr; gap: 28px; align-items: stretch;
@@ -492,8 +493,9 @@ button, input, select, textarea { font: inherit; }
 
 .faq {
   background:
-    radial-gradient(700px 300px at 0% 100%, rgba(107, 42, 82, 0.14), transparent 55%),
-    var(--mist);
+    radial-gradient(700px 320px at 100% 0%, rgba(196, 120, 58, 0.18), transparent 55%),
+    radial-gradient(500px 240px at 0% 100%, rgba(74, 24, 56, 0.06), transparent 50%),
+    var(--orange-soft);
 }
 .faq-layout {
   display: grid;
@@ -564,7 +566,13 @@ button, input, select, textarea { font: inherit; }
 }
 .edu-disclaimer { margin-top: 6px; }
 
-.contact { padding: 88px 0; background: var(--paper); }
+.contact {
+  padding: 88px 0;
+  background:
+    radial-gradient(700px 320px at 100% 0%, rgba(196, 120, 58, 0.18), transparent 55%),
+    radial-gradient(500px 240px at 0% 100%, rgba(74, 24, 56, 0.06), transparent 50%),
+    var(--orange-soft);
+}
 .contact-grid {
   display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 40px; align-items: start;
 }
