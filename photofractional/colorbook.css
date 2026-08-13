@@ -1,24 +1,30 @@
 :root {
-  --ink: #102A2E;
-  --slate: #2F555A;
-  --muted: #5E7A7E;
-  --mist: #E6F5F3;
-  --paper: #FFF8F2;
+  --ink: #121212;
+  --slate: #3D3538;
+  --muted: #6B6570;
+  --mist: #FBF8FA;
+  --paper: #FBF8FA;
   --white: #FFFFFF;
-  --teal: #0EA5A0;
-  --teal-deep: #0B7A76;
-  --teal-soft: #C8F0E8;
-  --coral: #F05A3D;
-  --coral-deep: #D64428;
-  --amber: #F0A33A;
-  --peach: #FFE4D4;
-  --copper: #F05A3D;
-  --copper-deep: #D64428;
-  --copper-soft: #FFE4D4;
-  --line: rgba(16, 42, 46, 0.1);
+  --plum: #4A1838;
+  --plum-deep: #2F0F24;
+  --plum-mid: #6B2A52;
+  --teal: #6B2A52;
+  --teal-deep: #4A1838;
+  --teal-soft: #F7F1F5;
+  --coral: #C4783A;
+  --coral-deep: #B06830;
+  --amber: #D4894A;
+  --peach: #F8EFE4;
+  --copper: #C4783A;
+  --copper-deep: #B06830;
+  --copper-soft: #F8EFE4;
+  --orange: #C4783A;
+  --orange-soft: #F8EFE4;
+  --accent-glow: #E8C49A;
+  --line: rgba(74, 24, 56, 0.12);
   --max: 1140px;
-  --font: "DM Sans", system-ui, sans-serif;
-  --display: "Space Grotesk", system-ui, sans-serif;
+  --font: "Plus Jakarta Sans", system-ui, sans-serif;
+  --display: "Plus Jakarta Sans", system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,8 +32,8 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--font);
   background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(14, 165, 160, 0.14), transparent 55%),
-    radial-gradient(900px 420px at 100% 8%, rgba(240, 90, 61, 0.12), transparent 50%),
+    radial-gradient(1200px 500px at 10% -10%, rgba(107, 42, 82, 0.14), transparent 55%),
+    radial-gradient(900px 420px at 100% 8%, rgba(196, 120, 58, 0.12), transparent 50%),
     var(--paper);
   color: var(--ink);
   line-height: 1.65;
@@ -84,16 +90,16 @@ button, input, select, textarea { font: inherit; }
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-copper {
-  background: linear-gradient(135deg, var(--coral) 0%, #F07A3A 55%, var(--amber) 120%);
+  background: linear-gradient(135deg, var(--coral) 0%, var(--orange) 55%, var(--amber) 120%);
   color: #fff;
-  box-shadow: 0 10px 24px rgba(240, 90, 61, 0.28);
+  box-shadow: 0 10px 24px rgba(196, 120, 58, 0.28);
 }
-.btn-copper:hover { background: linear-gradient(135deg, var(--coral-deep), #E06A2E); }
+.btn-copper:hover { background: linear-gradient(135deg, var(--coral-deep), var(--amber)); }
 .btn-ghost {
   background: transparent; color: var(--ink);
-  border-color: rgba(16, 42, 46, 0.18);
+  border-color: rgba(47, 15, 36, 0.18);
 }
-.btn-ghost:hover { border-color: var(--teal); color: var(--teal-deep); background: rgba(14, 165, 160, 0.08); }
+.btn-ghost:hover { border-color: var(--teal); color: var(--teal-deep); background: rgba(107, 42, 82, 0.08); }
 .btn-light { background: var(--white); color: var(--ink); }
 .btn-light:hover { background: var(--teal-soft); }
 
@@ -105,7 +111,7 @@ button, input, select, textarea { font: inherit; }
   overflow: hidden;
   color: #fff;
   background:
-    linear-gradient(105deg, rgba(11, 70, 72, 0.94) 0%, rgba(16, 42, 46, 0.88) 38%, rgba(240, 90, 61, 0.28) 68%, rgba(16, 42, 46, 0.1) 100%),
+    linear-gradient(105deg, rgba(47, 15, 36, 0.94) 0%, rgba(47, 15, 36, 0.88) 38%, rgba(196, 120, 58, 0.28) 68%, rgba(47, 15, 36, 0.1) 100%),
     url("/photofractional/assets/hero-desktop-bg.jpg") right center / cover no-repeat;
 }
 .hero-media { display: none; }
@@ -122,7 +128,7 @@ button, input, select, textarea { font: inherit; }
   font-family: var(--display);
   font-size: 1.05rem; font-weight: 600;
   letter-spacing: 0.02em;
-  color: #FFE0A8;
+  color: var(--accent-glow);
   margin-bottom: 14px;
   opacity: 0; animation: rise 0.7s ease 0.05s forwards;
 }
@@ -165,7 +171,7 @@ button, input, select, textarea { font: inherit; }
   width: 8px; height: 8px; margin-top: 0.4em; flex-shrink: 0;
   background: linear-gradient(135deg, var(--amber), var(--coral));
   transform: rotate(45deg);
-  box-shadow: 0 0 0 3px rgba(240, 163, 58, 0.22);
+  box-shadow: 0 0 0 3px rgba(212, 137, 74, 0.22);
 }
 .hero-ctas {
   display: flex; flex-wrap: wrap; gap: 12px;
@@ -180,7 +186,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .trust {
-  background: linear-gradient(90deg, var(--teal-deep) 0%, var(--teal) 45%, #1AABB0 100%);
+  background: linear-gradient(90deg, var(--teal-deep) 0%, var(--teal) 45%, var(--orange) 100%);
   color: rgba(255,255,255,0.95);
 }
 .trust-inner {
@@ -215,8 +221,8 @@ button, input, select, textarea { font: inherit; }
 
 .assessment {
   background:
-    radial-gradient(600px 280px at 0% 0%, rgba(240, 90, 61, 0.12), transparent 60%),
-    radial-gradient(600px 280px at 100% 100%, rgba(14, 165, 160, 0.14), transparent 60%),
+    radial-gradient(600px 280px at 0% 0%, rgba(196, 120, 58, 0.12), transparent 60%),
+    radial-gradient(600px 280px at 100% 100%, rgba(107, 42, 82, 0.14), transparent 60%),
     var(--mist);
 }
 .assessment-head {
@@ -272,13 +278,13 @@ button, input, select, textarea { font: inherit; }
 }
 .assess-xpl {
   background: linear-gradient(165deg, #fff 0%, var(--peach) 100%);
-  border-color: rgba(240, 90, 61, 0.2);
+  border-color: rgba(196, 120, 58, 0.2);
 }
 .assess-xpl .assess-label { color: var(--coral); }
 .assess-xpl::before { color: var(--coral); }
 .assess-resurfx {
   background: linear-gradient(165deg, #fff 0%, var(--teal-soft) 100%);
-  border-color: rgba(14, 165, 160, 0.22);
+  border-color: rgba(107, 42, 82, 0.22);
 }
 .assess-resurfx .assess-label { color: var(--teal-deep); }
 .assess-resurfx::before { color: var(--teal-deep); }
@@ -288,13 +294,13 @@ button, input, select, textarea { font: inherit; }
 }
 .tech-visual {
   aspect-ratio: 4 / 3; overflow: hidden; border-radius: 18px;
-  box-shadow: 0 18px 40px rgba(14, 165, 160, 0.18);
+  box-shadow: 0 18px 40px rgba(107, 42, 82, 0.18);
   outline: 4px solid var(--teal-soft);
 }
 .tech-visual img { width: 100%; height: 100%; object-fit: cover; }
 
 .concerns {
-  background: linear-gradient(135deg, #0B5F5C 0%, #0EA5A0 42%, #1AABB0 70%, #F07A3A 140%);
+  background: linear-gradient(135deg, var(--plum) 0%, var(--plum-mid) 42%, var(--orange) 70%, var(--orange) 140%);
   color: #fff;
 }
 .concerns-layout {
@@ -306,7 +312,7 @@ button, input, select, textarea { font: inherit; }
   margin: 0 auto 40px;
   text-align: center;
 }
-.concerns .kicker { color: #FFE0A8; }
+.concerns .kicker { color: var(--accent-glow); }
 .concerns h2 {
   color: #fff;
   max-width: none;
@@ -363,7 +369,7 @@ button, input, select, textarea { font: inherit; }
   font-family: var(--display);
   font-size: 0.78rem;
   letter-spacing: 0.1em;
-  color: #FFE0A8;
+  color: var(--accent-glow);
   font-weight: 700;
   line-height: 1;
 }
@@ -390,7 +396,7 @@ button, input, select, textarea { font: inherit; }
   width: 14px; height: 14px; border-radius: 50%;
   background: linear-gradient(135deg, var(--teal), var(--coral));
   border: 2px solid var(--paper);
-  box-shadow: 0 0 0 4px rgba(14, 165, 160, 0.15);
+  box-shadow: 0 0 0 4px rgba(107, 42, 82, 0.15);
 }
 .step h3 {
   font-family: var(--display);
@@ -401,7 +407,7 @@ button, input, select, textarea { font: inherit; }
 
 .candidate {
   background:
-    radial-gradient(700px 320px at 100% 0%, rgba(240, 163, 58, 0.16), transparent 55%),
+    radial-gradient(700px 320px at 100% 0%, rgba(212, 137, 74, 0.16), transparent 55%),
     var(--mist);
 }
 .candidate-grid {
@@ -414,12 +420,12 @@ button, input, select, textarea { font: inherit; }
   padding: 12px 14px;
   background: rgba(255,255,255,0.75);
   border-radius: 12px;
-  border: 1px solid rgba(14, 165, 160, 0.14);
+  border: 1px solid rgba(107, 42, 82, 0.14);
 }
 .check-list li::before {
   content: "";
   width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px;
-  border: 1.5px solid rgba(14, 165, 160, 0.4);
+  border: 1.5px solid rgba(107, 42, 82, 0.4);
   border-radius: 5px;
   background:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%230EA5A0' stroke-width='2' d='M3 8.5l3 3 7-7'/%3E%3C/svg%3E") center / 12px no-repeat,
@@ -430,7 +436,7 @@ button, input, select, textarea { font: inherit; }
   grid-template-columns: minmax(140px, 0.9fr) 1.1fr;
   gap: 0;
   overflow: hidden;
-  background: linear-gradient(160deg, #0B5F5C 0%, #0EA5A0 70%, #F07A3A 160%);
+  background: linear-gradient(160deg, var(--plum) 0%, var(--plum-mid) 70%, var(--orange) 160%);
   color: rgba(255,255,255,0.92);
   padding: 0;
   border-radius: 18px;
@@ -460,7 +466,7 @@ button, input, select, textarea { font: inherit; }
 }
 .clinical-note strong {
   display: block; font-family: var(--display);
-  font-size: 1rem; color: #FFE0A8; margin-bottom: 10px; letter-spacing: 0.04em;
+  font-size: 1rem; color: var(--accent-glow); margin-bottom: 10px; letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .clinical-note p { font-size: 0.92rem; line-height: 1.65; margin: 0; }
@@ -471,13 +477,13 @@ button, input, select, textarea { font: inherit; }
   display: grid; grid-template-columns: 48px 1fr; gap: 16px;
   padding: 16px 18px;
   border-radius: 14px;
-  background: linear-gradient(90deg, rgba(14, 165, 160, 0.1), rgba(240, 90, 61, 0.08));
-  border: 1px solid rgba(14, 165, 160, 0.12);
+  background: linear-gradient(90deg, rgba(107, 42, 82, 0.1), rgba(196, 120, 58, 0.08));
+  border: 1px solid rgba(107, 42, 82, 0.12);
   font-size: 1.02rem; font-weight: 600; align-items: baseline;
 }
 .why-list li:nth-child(even) {
-  background: linear-gradient(90deg, rgba(240, 90, 61, 0.1), rgba(240, 163, 58, 0.08));
-  border-color: rgba(240, 90, 61, 0.14);
+  background: linear-gradient(90deg, rgba(196, 120, 58, 0.1), rgba(212, 137, 74, 0.08));
+  border-color: rgba(196, 120, 58, 0.14);
 }
 .why-list .n {
   font-family: var(--display); color: var(--teal-deep); font-weight: 700;
@@ -486,7 +492,7 @@ button, input, select, textarea { font: inherit; }
 
 .faq {
   background:
-    radial-gradient(700px 300px at 0% 100%, rgba(14, 165, 160, 0.14), transparent 55%),
+    radial-gradient(700px 300px at 0% 100%, rgba(107, 42, 82, 0.14), transparent 55%),
     var(--mist);
 }
 .faq-layout {
@@ -501,7 +507,7 @@ button, input, select, textarea { font: inherit; }
 .faq-list { display: grid; gap: 12px; max-width: none; }
 .faq-item {
   background: var(--white);
-  border: 1.5px solid rgba(14, 165, 160, 0.16);
+  border: 1.5px solid rgba(107, 42, 82, 0.16);
   border-radius: 16px;
   overflow: hidden;
 }
@@ -537,7 +543,7 @@ button, input, select, textarea { font: inherit; }
 
 .final {
   background:
-    linear-gradient(90deg, rgba(11, 70, 72, 0.92) 0%, rgba(11, 95, 92, 0.72) 42%, rgba(240, 90, 61, 0.28) 72%, rgba(240, 90, 61, 0.18) 100%),
+    linear-gradient(90deg, rgba(47, 15, 36, 0.92) 0%, rgba(74, 24, 56, 0.72) 42%, rgba(196, 120, 58, 0.28) 72%, rgba(196, 120, 58, 0.18) 100%),
     url("/photofractional/assets/final-cta-bg.jpg") right center / cover no-repeat;
   color: #fff; padding: 88px 0;
   overflow: hidden;
@@ -577,10 +583,10 @@ button, input, select, textarea { font: inherit; }
 .contact-detail a:hover { color: var(--teal); }
 .lead-form {
   background: var(--white);
-  border: 1px solid rgba(14, 165, 160, 0.16);
+  border: 1px solid rgba(107, 42, 82, 0.16);
   padding: 28px 26px;
   border-radius: 18px;
-  box-shadow: 0 16px 40px rgba(14, 165, 160, 0.1);
+  box-shadow: 0 16px 40px rgba(107, 42, 82, 0.1);
 }
 .lead-form h2 {
   font-family: var(--display);
@@ -596,15 +602,15 @@ button, input, select, textarea { font: inherit; }
   padding: 12px 14px; background: var(--paper); color: var(--ink);
 }
 .field input:focus, .field select:focus, .field textarea:focus {
-  outline: 2px solid rgba(14, 165, 160, 0.35); border-color: var(--teal);
+  outline: 2px solid rgba(107, 42, 82, 0.35); border-color: var(--teal);
 }
 .btn-submit {
   width: 100%; min-height: 52px; margin-top: 6px; border: 0; border-radius: 12px;
   background: linear-gradient(135deg, var(--coral), var(--amber));
   color: #fff; font-weight: 800; cursor: pointer;
-  box-shadow: 0 10px 24px rgba(240, 90, 61, 0.28);
+  box-shadow: 0 10px 24px rgba(196, 120, 58, 0.28);
 }
-.btn-submit:hover { background: linear-gradient(135deg, var(--coral-deep), #E06A2E); }
+.btn-submit:hover { background: linear-gradient(135deg, var(--coral-deep), var(--amber)); }
 .btn-submit:disabled { opacity: 0.7; cursor: wait; }
 .form-success {
   display: none; padding: 18px; border-radius: 8px;
@@ -617,7 +623,7 @@ button, input, select, textarea { font: inherit; }
 .lead-form.submitted .form-success { display: block; }
 
 .site-footer {
-  background: linear-gradient(180deg, #0B5F5C 0%, #102A2E 100%);
+  background: linear-gradient(180deg, var(--plum) 0%, var(--plum-deep) 100%);
   color: rgba(255,255,255,0.78); padding: 48px 0 28px;
 }
 .footer-inner {
@@ -659,7 +665,7 @@ button, input, select, textarea { font: inherit; }
   visibility: visible;
 }
 .footer-bottom a {
-  color: #FFE0A8;
+  color: var(--accent-glow);
   text-decoration: underline; text-underline-offset: 2px;
 }
 .footer-bottom a:hover { color: #fff; }
@@ -674,9 +680,9 @@ button, input, select, textarea { font: inherit; }
   pointer-events: auto;
   display: flex; align-items: center; gap: 8px;
   padding: 8px; width: 100%; max-width: 420px; margin-inline: auto;
-  border-radius: 999px; background: #0B5F5C;
+  border-radius: 999px; background: var(--plum);
   border: 1px solid rgba(255,255,255,0.14);
-  box-shadow: 0 16px 40px rgba(11, 95, 92, 0.35);
+  box-shadow: 0 16px 40px rgba(74, 24, 56, 0.35);
 }
 .island-consult {
   flex: 1; min-height: 46px; border-radius: 999px;
@@ -722,7 +728,7 @@ button, input, select, textarea { font: inherit; }
 .why-list li:hover,
 .faq-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(11, 95, 92, 0.12);
+  box-shadow: 0 14px 32px rgba(74, 24, 56, 0.12);
 }
 .mobile-island-dock {
   animation: islandIn 0.55s ease 0.35s both;
@@ -755,7 +761,7 @@ button, input, select, textarea { font: inherit; }
     align-items: center;
     justify-content: center;
     background:
-      linear-gradient(105deg, rgba(11, 70, 72, 0.88) 0%, rgba(16, 42, 46, 0.78) 48%, rgba(11, 70, 72, 0.45) 72%, rgba(240, 90, 61, 0.28) 100%),
+      linear-gradient(105deg, rgba(47, 15, 36, 0.88) 0%, rgba(47, 15, 36, 0.78) 48%, rgba(47, 15, 36, 0.45) 72%, rgba(196, 120, 58, 0.28) 100%),
       url("/photofractional/assets/hero-mobile-bg.jpg") right center / cover no-repeat;
   }
   .hero-media { display: none; }
@@ -833,7 +839,7 @@ button, input, select, textarea { font: inherit; }
   .section, .final, .contact { padding: 64px 0; }
   .final {
     background:
-      linear-gradient(180deg, rgba(11, 70, 72, 0.88) 0%, rgba(11, 95, 92, 0.78) 55%, rgba(240, 90, 61, 0.45) 100%),
+      linear-gradient(180deg, rgba(47, 15, 36, 0.88) 0%, rgba(74, 24, 56, 0.78) 55%, rgba(196, 120, 58, 0.45) 100%),
       url("/photofractional/assets/final-cta-bg.jpg") 72% center / cover no-repeat;
   }
   .section h2 { max-width: none; }
