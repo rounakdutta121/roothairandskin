@@ -106,7 +106,7 @@ button, input, select, textarea { font: inherit; }
   color: #fff;
   background:
     linear-gradient(105deg, rgba(11, 70, 72, 0.94) 0%, rgba(16, 42, 46, 0.88) 38%, rgba(240, 90, 61, 0.28) 68%, rgba(16, 42, 46, 0.1) 100%),
-    url("assets/hero-desktop-bg.jpg") right center / cover no-repeat;
+    url("/photofractional/assets/hero-desktop-bg.jpg") right center / cover no-repeat;
 }
 .hero-media { display: none; }
 .hero-inner {
@@ -538,7 +538,7 @@ button, input, select, textarea { font: inherit; }
 .final {
   background:
     linear-gradient(90deg, rgba(11, 70, 72, 0.92) 0%, rgba(11, 95, 92, 0.72) 42%, rgba(240, 90, 61, 0.28) 72%, rgba(240, 90, 61, 0.18) 100%),
-    url("assets/final-cta-bg.jpg") right center / cover no-repeat;
+    url("/photofractional/assets/final-cta-bg.jpg") right center / cover no-repeat;
   color: #fff; padding: 88px 0;
   overflow: hidden;
 }
@@ -749,7 +749,7 @@ button, input, select, textarea { font: inherit; }
     justify-content: center;
     background:
       linear-gradient(105deg, rgba(11, 70, 72, 0.88) 0%, rgba(16, 42, 46, 0.78) 48%, rgba(11, 70, 72, 0.45) 72%, rgba(240, 90, 61, 0.28) 100%),
-      url("assets/hero-mobile-bg.jpg") right center / cover no-repeat;
+      url("/photofractional/assets/hero-mobile-bg.jpg") right center / cover no-repeat;
   }
   .hero-media { display: none; }
   .hero-inner {
@@ -827,7 +827,7 @@ button, input, select, textarea { font: inherit; }
   .final {
     background:
       linear-gradient(180deg, rgba(11, 70, 72, 0.88) 0%, rgba(11, 95, 92, 0.78) 55%, rgba(240, 90, 61, 0.45) 100%),
-      url("assets/final-cta-bg.jpg") 72% center / cover no-repeat;
+      url("/photofractional/assets/final-cta-bg.jpg") 72% center / cover no-repeat;
   }
   .section h2 { max-width: none; }
   .mobile-island-dock { display: block; }
