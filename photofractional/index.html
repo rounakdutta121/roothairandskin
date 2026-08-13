@@ -663,12 +663,19 @@ button, input, select, textarea { font: inherit; }
 .footer-bottom {
   width: min(100% - 40px, var(--max));
   margin: 28px auto 0; padding-top: 16px;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255,255,255,0.18);
   display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between;
-  font-size: 0.75rem; color: rgba(255,255,255,0.5);
+  font-size: 0.8rem; color: rgba(255,255,255,0.82);
+  opacity: 1;
+}
+.footer-bottom > * {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  visibility: visible;
 }
 .footer-bottom a {
-  color: rgba(255,255,255,0.62);
+  color: #FFE0A8;
   text-decoration: underline; text-underline-offset: 2px;
 }
 .footer-bottom a:hover { color: #fff; }
@@ -1466,8 +1473,8 @@ button, input, select, textarea { font: inherit; }
         mark(".contact-details > *", null, 70);
         mark(".lead-form > h2, .lead-form > .sub, .lead-form .form-row, .lead-form .field, .lead-form .consent, .lead-form .btn-submit", "reveal-right", 60);
         mark(".footer-inner > *", null, 100);
-        mark(".footer-bottom > *", "reveal-fade", 80);
         mark(".footer-socials a", "reveal-scale", 70);
+        // Keep legal/privacy row always visible (bottom of page often never intersects)
 
         // Normalize: reveal-up is default translateY (no extra class needed)
         document.querySelectorAll(".reveal-up").forEach(function (el) { el.classList.remove("reveal-up"); });
@@ -1486,8 +1493,15 @@ button, input, select, textarea { font: inherit; }
               activate(entry.target);
               io.unobserve(entry.target);
             });
-          }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+          }, { threshold: 0.08, rootMargin: "0px 0px 12% 0px" });
           document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+          // Safety: force any remaining reveals visible near document end
+          window.addEventListener("scroll", function revealTail() {
+            const nearEnd = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 120);
+            if (!nearEnd) return;
+            document.querySelectorAll(".reveal:not(.in)").forEach(activate);
+            window.removeEventListener("scroll", revealTail);
+          }, { passive: true });
         } else {
           document.querySelectorAll(".reveal").forEach(activate);
         }

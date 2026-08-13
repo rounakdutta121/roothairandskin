@@ -647,12 +647,19 @@ button, input, select, textarea { font: inherit; }
 .footer-bottom {
   width: min(100% - 40px, var(--max));
   margin: 28px auto 0; padding-top: 16px;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid rgba(255,255,255,0.18);
   display: flex; flex-wrap: wrap; gap: 8px 16px; justify-content: space-between;
-  font-size: 0.75rem; color: rgba(255,255,255,0.5);
+  font-size: 0.8rem; color: rgba(255,255,255,0.82);
+  opacity: 1;
+}
+.footer-bottom > * {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  visibility: visible;
 }
 .footer-bottom a {
-  color: rgba(255,255,255,0.62);
+  color: #FFE0A8;
   text-decoration: underline; text-underline-offset: 2px;
 }
 .footer-bottom a:hover { color: #fff; }
